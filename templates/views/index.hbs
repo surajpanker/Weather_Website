@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>Weather Home</title>
+   <link rel ="stylesheet" href="./css/style.css">
+   <link rel ="icon" href="./img/w.png">
+</head>
+<body style="background-image: url('./img/w1.jpeg');">
+
+    <div class="main-content" > 
+    {{> header}}
+    <p style="color: aquamarine;">Use your address to Find Your weather </p>
+
+    <form>
+        <input placeholder="location">
+        <button>Search</button>
+    </form>
+    <p id="message-1" style="color: blueviolet;"></p>
+    <p id="message-2" style="color: chocolate;"> </p>
+    </div>
+  
+    {{>footer}}
+
+       <script src="./js/app.js"></script>
+
+</body>
+</html>
