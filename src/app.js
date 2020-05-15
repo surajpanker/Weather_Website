@@ -5,7 +5,7 @@ const geoCode =require('./utils/geocode.js');
 const getTem =require('./utils/getTem.js');
 
 const app =express();
-
+const port =process.env.PORT||3001;
  //path
 const pathToPublic =path.join(__dirname,'../public');
 const pathToView =path.join(__dirname,'../templates/views');
@@ -94,6 +94,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen('3001',()=>{
-    console.log("App is running");
+app.listen(port,()=>{
+    console.log("App is running on "+port);
 })

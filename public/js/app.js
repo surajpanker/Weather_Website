@@ -11,7 +11,7 @@ weather.addEventListener('submit',(e)=>{
     // if(!locat.value)
     // Message1.textContent="please try again!!!!";
 
-        fetch(`http://localhost:3001/weather?address=%22${locat.value.toString()}%22`).then((response)=>{
+        fetch(`/weather?address=${locat.value}`).then((response)=>{
             response.json().then(data=>{
                 if(data.error){
                     Message1.textContent=data.error;
