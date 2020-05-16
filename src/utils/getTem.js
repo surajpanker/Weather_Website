@@ -11,7 +11,10 @@ const Gettemture =(langlatti,callback)=>{
              callback("Unacle to get weather data, please try again latter",undefined);
          }
          else{
-             const pri_data= `${body.current.weather_descriptions[0]}.Current Temperature is ${body.current.temperature} but i feel like is ${body.current.feelslike}`
+            
+             const pri_data= `${body.current.weather_descriptions[0]}. 
+                             Current Temperature is ${body.current.temperature} but i feel like is ${body.current.feelslike}
+                                and wind speed is ${body.current.wind_speed} and humidity is ${body.current.humidity} `
     
       callback(undefined,{
           description:pri_data,
