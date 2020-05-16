@@ -13,8 +13,9 @@ const Gettemture =(langlatti,callback)=>{
          else{
             
              const pri_data= `${body.current.weather_descriptions[0]}. 
-                             Current Temperature is ${body.current.temperature} °C but i feel like is ${body.current.feelslike} °C
-                                and wind speed is ${body.current.wind_speed} km/h and humidity is ${body.current.humidity} %`
+                               Current Temperature is ${body.current.temperature} °C but  , I feel like is ${body.current.feelslike}°C
+                                and wind speed is ${body.current.wind_speed} km/h and humidity is ${body.current.humidity} %
+                                and date-time ${body.location.localtime}`
     
       callback(undefined,{
           description:pri_data,
